@@ -69,6 +69,8 @@ int but_state_cur;
 void but_init(void) {
   for( int i=0; i<BUT_COUNT; i++ )
     pinMode(BUT_PINS[i],INPUT_PULLUP); 
+  but_scan();
+  but_scan();
 }
 
 void but_scan(void) {
@@ -153,8 +155,8 @@ report_t reports[BUT_COUNT] = {
 // Note: any activity on Serial port (print respectively read) will alter these LEDs.
 // If you have another board, or soldered LEDs yourself to pins, change the LED macros.
 
-#define LED_A_ON()  TXLED0
-#define LED_A_OFF() TXLED1
+#define LED_A_ON()  TXLED1
+#define LED_A_OFF() TXLED0
 
 #define LED_B_ON()  RXLED0
 #define LED_B_OFF() RXLED1
