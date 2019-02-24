@@ -3,8 +3,11 @@
 
 
 // Make sure that in Sketch > Include Library > Manage Libraries...
-// You have installed HID-Project by NicoHood (I used version 2.5.0)
+// You have installed 'HID-Project' by NicoHood (I used version 2.5.0)
 #include "HID-Project.h"
+#if USB_VERSION>0x200
+#error USBCore.h file is patched (?)
+#endif
 
 // This sketch has an abstract notion of button indices (numbers, ids).
 // Technically, these indices are used as index in BUT_PINS[] and reports[]. 
@@ -131,6 +134,7 @@ typedef struct report_s {
 // keyboard keys respectively consumer keys, see 
 //   Arduino\libraries\HID\src\HID-APIs\ImprovedKeylayouts.h
 //   Arduino\libraries\HID\src\HID-APIs\ConsumerAPI.h
+// Some examples: KEY_A, KEY_0, KEY_F1, KEY_ENTER, KEY_COMMA, KEYPAD_ADD, KEY_RIGHT_ARROW, KEY_LEFT_ALT, KEY_COPY, KEY_PASTE
 report_t reports[BUT_COUNT] = {
   CON1(MEDIA_VOLUME_DOWN),
   CON1(MEDIA_VOLUME_MUTE),
@@ -143,7 +147,6 @@ report_t reports[BUT_COUNT] = {
   KBD1(KEY_F24),
   KBD2(KEY_LEFT_ALT,KEY_F4),
 };
-
 
 // LED - driver for the LEDs -----------------------------------------------
 
