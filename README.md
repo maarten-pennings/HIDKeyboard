@@ -45,11 +45,10 @@ I noticed that people wanted to go back to a certain page to discuss that.
 So, I decided to glue a two-key keyboard to the screen with keys for PageUp and PageDown.
 See the pictures below for the second keyboard. 
 
-The original [code](ProMicroKbd) was easy to adapt, although the polarity of the buttons changed.
-The reason is that I used 
-[(capacitive) touch sensor boards](https://www.aliexpress.com/item/Digital-capacitive-touch-sensor/32570170116.html), 
+The original [code](ProMicroKbd) was easy to adapt, resulting in [ProMicroKbd2](ProMicroKbd2).
+I did have to make a "non-expected" change: the buttons changed. The reason is that I used 
+[capacitive touch sensor boards](https://www.aliexpress.com/item/Digital-capacitive-touch-sensor/32570170116.html), 
 those boards give 1 (3V3) when pressed, not 0 (0V0) as the mechanical switches did.
-
 
 ![PCB](key2-pcb.jpg)
 The Arduino PCB with two touch sensor boards
@@ -63,6 +62,6 @@ The PCBs in the box.
 ![Top](key2-top.jpg)
 Top view of the box.
 
-Bottom with [inserts](https://www.aliexpress.com/item/CNIM-Hot-M2-x-3mm-Brass-Cylinder-Knurled-Threaded-Round-Insert-Embedded-Nuts-100pcs/32876609027.html))
+Bottom with [inserts](https://www.aliexpress.com/item/CNIM-Hot-M2-x-3mm-Brass-Cylinder-Knurled-Threaded-Round-Insert-Embedded-Nuts-100pcs/32876609027.html)
 
 (end)
