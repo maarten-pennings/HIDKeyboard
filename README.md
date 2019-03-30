@@ -1,6 +1,7 @@
 # HIDKeyboard
 A small extra keyboard for a PC
 
+
 ## Introduction
 I was inspired by [Maker's Muse](https://www.youtube.com/watch?v=MeYuIWGqquE) to make my own private keyboard.
 
@@ -12,11 +13,18 @@ I selected the following components:
  - [USB HID software library from NicoHood](https://github.com/NicoHood/HID), which actually comes _with_ the Arduino IDE
  - The Arduino [application](ProMicroKbd)
  
-The Arduino application is written by me in such a way that it should be easy to configure. That is what this github project is about.
+The Arduino application is written by me in such a way that it should be easy to configure. 
+That is what this github project is about.
 
-I am considering adding a virtual serial com port to the keyboard, so that the configuration can simply be written to the keyboard, meaning that a recompile is no longer needed.
+I am considering adding a virtual serial com port to the keyboard, 
+so that the configuration can simply be written to the keyboard, meaning that a recompile is no longer needed.
 
-## Result
+
+## Result - Gaming keyboard
+
+The first keyboard that I made was a "gaming" keyboard for my son.
+See the pictures below. The code is in [ProMicroKbd](ProMicroKbd).
+
 ![Bottom](bottom.jpg)
 Bottom view with USB plug and bolts (that connect to [inserts](https://www.aliexpress.com/item/CNIM-Hot-M2-x-3mm-Brass-Cylinder-Knurled-Threaded-Round-Insert-Embedded-Nuts-100pcs/32876609027.html))
 
@@ -28,5 +36,33 @@ Top view, still without the key caps.
 
 ![Caps](caps.jpg)
 Final keyboard with the caps.
+
+
+## Result - NarrowCast keyboard
+
+A year later, I made a NarrowCast system: a screen in the coffee corner showing company news.
+I noticed that people wanted to go back to a certain page to discuss that. 
+So, I decided to glue a two-key keyboard to the screen with keys for PageUp and PageDown.
+See the pictures below for the second keyboard. 
+
+The original [code](ProMicroKbd) was easy to adapt, although the polarity of the buttons changed.
+The reason is that I used 
+[(capacitive) touch sensor boards](https://www.aliexpress.com/item/Digital-capacitive-touch-sensor/32570170116.html), 
+those boards give 1 (3V3) when pressed, not 0 (0V0) as the mechanical switches did.
+
+
+![PCB](key2-pcb.jpg)
+The Arduino PCB with two touch sensor boards
+
+![Wiring](key2-pcbwire.jpg)
+The Arduino pro micro inside
+
+![Box](key2-box.jpg)
+The PCBs in the box.
+
+![Top](key2-top.jpg)
+Top view of the box.
+
+Bottom with [inserts](https://www.aliexpress.com/item/CNIM-Hot-M2-x-3mm-Brass-Cylinder-Knurled-Threaded-Round-Insert-Embedded-Nuts-100pcs/32876609027.html))
 
 (end)
