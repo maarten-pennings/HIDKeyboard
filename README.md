@@ -1,7 +1,11 @@
 # HIDKeyboard
-A small extra keyboard for a PC
+A small extra keyboard for a PC (or Raspberry Pi)
 
+
+# Introduction
 I was inspired by [Maker's Muse](https://www.youtube.com/watch?v=MeYuIWGqquE) to make my own private keyboard.
+The first keyboard that I made was a "gaming" keyboard for my son, an extra "quick access" keyboard attached to his (game) PC.
+Next project was two-key keyboard (PageUp and PageDown) for a Raspberry Pi showing a series of pages.
 
 
 # Project 1 - Gaming keyboard
@@ -41,7 +45,7 @@ Final keyboard with the caps.
 
 
 # Project 2 - NarrowCast keyboard
-A year later, I made a [NarrowCast](https://github.com/maarten-pennings/NarrowCast) system: 
+Half a year later, I made a [NarrowCast](https://github.com/maarten-pennings/NarrowCast) system: 
 a screen in the coffee corner showing company news.
 I noticed that people wanted to go back to a certain page to discuss that. 
 So, I decided to add a two-key keyboard to the screen with keys for PageUp and PageDown.
