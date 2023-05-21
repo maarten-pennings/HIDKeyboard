@@ -78,4 +78,10 @@ Securing the bottom with bolts.
 Complete assembly, top view.
 
 
+
+# Project 3 - Trying the Raspberry Pi RP2040 
+
+Four years later, I gave the RP2040 a [try](rp2040try).
+
+
 (end)
